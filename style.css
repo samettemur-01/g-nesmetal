@@ -26,7 +26,7 @@ html::-webkit-scrollbar-thumb{
 section{
     padding: 4rem 0 2rem;
 }
-img{
+img{    
     width: 100%;
 }
 
@@ -69,6 +69,8 @@ header.shadow#search-icon{
     color: var(--text-color);
     display: none;
 }
+
+
 .logo{
     font-size: 1.2rem;
     font-weight: 700;
@@ -81,8 +83,10 @@ header.shadow#search-icon{
 }
 
 .navbar{
-    display: flex;
-    column-gap: 2rem;
+    display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .navbar a{
     color: var(--text-color);
@@ -175,6 +179,7 @@ header.shadow#search-icon{
 .heading p{
     font-size: 0.938rem;
     font-weight: 300;
+    display: flex;
 }
 .cars-container{
     display: flex;
@@ -375,6 +380,7 @@ header.shadow#search-icon{
     margin-bottom: 1rem;
 }
 .footer-box a,
+
 .footer-box p{
     color:#818181;
     margin-bottom: 10px;
@@ -391,16 +397,203 @@ header.shadow#search-icon{
     background: var(--text-color);
 
 }
-
-#callnowbutton.cnb-full {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0 1px 0 rgb(0 0 0 / 18%);
-    width: 100%;
-    left: 0;
-    height: 60px;
+.adres{
+    background-color: #020102;
+    color: #818181;
+    text-align: center;
+    cursor: pointer;
 }
+.adres a{
+    background-color: #020102;
+    color: #818181;
+    text-align: center;
+    cursor: pointer;
+}
+
+.adres :hover{
+    color: var(--main-color);
+}
+#fixed-button {
+    position: absolute;
+    right: 90px;
+    bottom: -630px;
+    
+}
+
+#fixed-button button {
+    float: left;
+    position: fixed;
+    z-index: 999999999;
+    text-decoration: none;
+    border: 0;
+    margin: 0;
+    width: auto;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 24px;
+    padding: 5px 20px 5px 25px;
+    right: 16px;
+    bottom: 40px;
+    background-color: #17c407;
+    cursor: pointer;
+}
+
+
+.telefon{
+    background-color: #020102;
+    color: #818181;
+    text-align: center;
+    cursor: pointer;
+}
+.telefon a{
+    background-color: #020102;
+    color: #818181;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+li {
+    display:inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color:transparent; 
+    
+}
+
+ul li ul {
+    
+    display:none;
+    position:absolute;
+    width:100px
+}
+
+ul li:hover ul{
+    display:block;
+}
+li ul li {
+    display:block; 
+}
+.alt{
+    background-color: #fff;
+}
+
+.başlık{
+    text-align: center;
+    color: #17c407;
+    -webkit-text-stroke: 0.5px black;
+}
+.altbaslik{
+    text-align: center;
+    color: #020102;
+    font-size:11px;
+    display: grid;
+}
+/* 1 */
+.expand-element {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+
+  .expand-content{
+    max-height: 0;
+    justify-content: center;
+    overflow: hidden;
+    border: 0.2px solid black;
+    margin-top: 10px;
+    transition: max-height 0.2s ease-out, opacity 0.2s ease-out;
+  }
+  
+  .expand-element.expanded .expand-content {
+    max-height: 100px; /* or any other value */
+    opacity: 1;
+  }
+  .expand-element p{
+    text-align: center;
+    margin-top: 10px;
+  }
+
+ /* 2 */
+
+  .expand-elementt {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .expand-contentt{
+    max-height: 0;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid black;
+    margin-top: 10px;
+    transition: max-height 0.2s ease-out, opacity 0.2s ease-out;
+  }
+  
+  .expand-elementt.expanded .expand-contentt{
+    max-height: 100px; /* or any other value */
+    opacity: 1;
+  }
+  .expand-elementt p{
+    text-align: center;
+  }
+ 
+  
+   /* 3 */
+
+  .expand-elementtt {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    
+    cursor: pointer;
+  }
+  
+  .expand-contenttt {
+    max-height: 0;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid black;
+    margin-top: 10px;
+    transition: max-height 0.2s ease-out, opacity 0.2s ease-out;
+  }
+  
+  .expand-elementtt.expanded .expand-contenttt {
+    max-height: 100px; /* or any other value */
+    opacity: 1;
+  }
+  .expand-elementtt p{
+    text-align: center;
+    margin-top: 10px;
+  }
+
 
 @media (max-width:1080px){
     .container{
@@ -453,6 +646,10 @@ header.shadow#search-icon{
         box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
         clip-path: circle(0% at 0% 0%);
         transition: 0.6s;
+        display: flex;
+        align-items: center;
+
+        
     }
     .navbar a {
         display: block;
@@ -472,4 +669,5 @@ header.shadow#search-icon{
 
     
 }   
+
 

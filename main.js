@@ -5,19 +5,15 @@ document.querySelector('#search-icon').onclick = () => {
 }
 
 
-let menu = document.querySelector('.navbar');
-
-document.querySelector('#menu-icon').onclick = () => {
-    menu.classList.remove('active');
-    search.classList.remove('active');
-}
-
-window.onscroll = () => {
-    menu.classList.remove('active');
-    search.classList.remove('active');  
-}
 
 
+
+var menuToggle = document.querySelector("#menu-icon");
+var menu = document.querySelector(".navbar");
+
+menuToggle.addEventListener("click", function() {
+  menu.classList.toggle("open");
+});
 
 
 
@@ -32,3 +28,33 @@ window.addEventListener('scroll' , () =>{
 
 
     
+const expandElement = document.querySelector('.expand-element');
+expandElement.addEventListener('click', () => {
+  expandElement.classList.toggle('expanded');
+});
+
+const expandElementt = document.querySelector('.expand-elementt');
+expandElementt.addEventListener('click', () => {
+  expandElementt.classList.toggle('expanded');
+});
+
+const expandElementtt = document.querySelector('.expand-elementtt');
+expandElementtt.addEventListener('click', () => {
+  expandElementtt .classList.toggle('expanded');
+});
+
+
+
+const expandElements = document.querySelectorAll('.expand-element');
+
+expandElements.forEach(expandElement => {
+  expandElement.addEventListener('click', () => {
+    expandElementt.forEach(element => {
+      element.classList.remove('expanded');
+    });
+    expandElement.classList.add('expanded');
+  });
+});
+
+
+
