@@ -14,33 +14,13 @@
 <body>
     
     <header>
-        <div id="fixed-button">
-            <a href="tel:+90 532 678 90 41"><button> Hemen Arayın</button></a>
-          </div>
-        <div class="nav container">
-            <i class='bx bx-menu' id="menu-icon"></i>
+        
+        <div class="logo">
             <a href="#home" class="logo">Güneş<span>Metal</span></a>
-            <ul class="navbar">
-                <li><a href="#home">Ana sayfa</a></li>
-                <li><a href="#cars">Hurda Çeşitleri</a></li>           
-    <li><a href="#about">Ürünlerimiz</a>
-        </li>
-    <li><a href="#Ders">Hakkımızda</a>
-   <ul class="alt">
-    <li><a href="#php">Profil</a></li>
-    <li><a href="#css">İletişim</a></li> 
-    <li><a href="#html">Ürünler</a>
-    </li> 
-         
-    </ul>
-    </li>
-    
-    
-    </ul>
+        </div>
+        
+        <div class="ara">
             <i class='bx bx-search' id="search-icon"></i>
-            <div class="search-box container">
-                <input type="search" name="" id="" placeholder="Ara...">
-            </div>
         </div>
     </header>
     
@@ -55,7 +35,7 @@
         <div class="heading">
             <span>Hurda Çeşitleri</span>
             <h2></h2>
-            <p>Hurdalar Değerinde Alınır</p>
+            <p class="ppp">Hurdalar Değerinde Alınır</p>
         </div>
         <div class="cars-container container">
            <!--Kutu 1-->
@@ -271,8 +251,18 @@
         <p>&#169; Tüm Haklar Gizlidir</p>
     </div>
 
-    
     <script src="main.js"></script>
-    
+
+    <script>
+        function toggleMenu() {
+  var links = document.querySelector(".links");
+  if (links.style.display === "block") {
+    links.style.display = "none";
+  } else {
+    links.style.display = "block";
+  }
+}
+
+    </script>
 </body>
 </html>

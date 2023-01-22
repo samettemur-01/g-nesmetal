@@ -1,0 +1,26 @@
+ <!--
+        
+        <div class="nav container">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <a href="#home" class="logo">Güneş<span>Metal</span></a>
+            <ul class="navbar">
+                <li><a href="#home">Ana sayfa</a></li>
+                <li><a href="#cars">Hurda Çeşitleri</a></li>           
+    <li><a href="#about">Ürünlerimiz</a>
+    </li>
+    <li><a href="#footer">Hakkımızda</a>
+   
+        
+    </li> 
+         
+    </ul>
+    </li>
+    
+    
+</ul>
+<i class='bx bx-search' id="search-icon"></i>
+<div class="search-box container">
+    <input type="search" name="" id="" placeholder="Ara...">
+</div>
+</div>
+-->
