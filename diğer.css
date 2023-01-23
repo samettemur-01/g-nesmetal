@@ -62,8 +62,7 @@ header.shadow#search-icon{
     align-items: center;
     justify-content: space-between;
     padding: 20px 35px;
-    
-    
+   
 }
 #menu-icon{
     font-size: 24px;
@@ -351,12 +350,14 @@ header.shadow#search-icon{
     background: var(--text-color);
     color: #f6f6f6;
     border-top: 2px solid var(--main-color);
+    
 }
 
 .footer-container{
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+    position:relative;
 }
  .footer-container .logo{
     color: var(--bg-color);
@@ -455,6 +456,18 @@ header.shadow#search-icon{
     text-align: center;
     cursor: pointer;
 }
+
+.bkr{
+    text-align: center;
+    justify-content: center;
+    color: #17c407;
+}
+.bkralt{
+    color: #020102;
+    text-align: center;
+    font-size: 13px;
+}
+
 
 
 ul {
@@ -598,6 +611,47 @@ li ul li {
     text-align: center;
     margin-top: 10px;
   }
+
+  table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+    margin-top: 100px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    margin-top: 15px;
+    display: flex;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
   /*------------------------------------------------------------------------------------------------------------------*/
 
   .sidenav {
@@ -716,7 +770,9 @@ li ul li {
     .navbar .active{
         clip-path: circle(144% at 0% 0%);
     }
-
+    .footer{
+        width: 100%;
+    }
     
 
     
