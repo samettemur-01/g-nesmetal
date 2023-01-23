@@ -62,7 +62,7 @@ header.shadow#search-icon{
     align-items: center;
     justify-content: space-between;
     padding: 20px 35px;
-   
+   background-color: white;
 }
 #menu-icon{
     font-size: 24px;
