@@ -26,6 +26,7 @@
                 <a href="#parts">Hurda Çeşitleri</a>
                 <a href="bakır.html">Ürünlerimiz</a>
                 <a href="#footer">Hakkımızda</a>
+                <a href="iletişim.html">İletişim</a>
               </div>
               
               <div id="main">
@@ -188,43 +189,79 @@
             </div>
         </div>
     </section>
-    <!--soru cevap bölümü-->
-    <section class="sorucevap">
-    
-        <div class="başlık">
-        <h2>Sıkça Sorulan Sorular</h2>
-    </div>
-    <div class="altbaslik">
-        <p>Merak ettiğiniz tüm soruların 
-            cevaplarını buradan bulabilirsiniz</p>
-    </div>
-    
-    
-    <div class="expand-element">
-        <p>+ Hurda Fiyat Değişikliğinin Sebepleri Nelerdir ?</p>
-        <div class="expand-content">
+    <style>
+        .collapsible {
+          background-color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          border: 0.1px solid black;
+        }
+        
+        .active, .collapsible:hover {
+          background-color: rgb(255, 255, 255);
+        }
+        
+        .content {
+          padding: 0 18px;
+          display: none;
+          overflow: hidden;
+          background-color: #ffffff;
+          text-align: center;
+          justify-content: center;
+          margin-top: 2px;
+        }
+        </style>
+        </head>
+        <body>
+        <section class="sorucevap">
+            <div class="başlık"> <h2>Sıkça Sorulan Sorular</h2></div>
+       
+        <div class="altbaslik"><p>Merak ettiğiniz tüm soruların 
+            cevaplarını buradan bulabilirsiniz</p></div>
+        
+        <button type="button" class="collapsible">+ Hurda Fiyat Değişikliğinin Sebepleri Nelerdir?</button>
+        <div class="content">
           <p>Metal Hurda Fiyatları LME (Londra Metal Borsası) 
             baz alınarak güncel 
             bir şekilde müşterilere yansıtılmaktadır.</p>
         </div>
-        </div>
-
-      <div class="expand-elementt">
-        <p>+ Hurda Tartımları Nasıl Yapılmaktadır?</p>
-        <div class="expand-contentt">
+        
+        
+        <button type="button" class="collapsible">+ Hurda Tartımları Nasıl Yapılmaktadır?</button>
+        <div class="content">
           <p>Tüm hurdaların tartımları dijital elektronik 
             kantarlar ile yapılmaktadır.</p>
         </div>
-      </div>
-
-      <div class="expand-elementtt">
-        <p>+ Satılan Hurdaların Ödemeleri Nasıl Yapılıyor?</p>
-        <div class="expand-contenttt">
+        <button type="button" class="collapsible">+ Satılan Hurdaların Ödemeleri Nasıl Yapılıyor?</button>
+        <div class="content">
           <p>Tüm hurda alımlarımızda ödemelerimiz hurda tartımından 
             hemen sonra nakit olarak yapılmaktadır.</p>
         </div>
-      </div>
+        
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
     </section>
+</section>
       
     
     

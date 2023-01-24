@@ -185,8 +185,8 @@ header.shadow#search-icon{
 .cars-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
-    margin-top: 5rem;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 .cars-container .box{
     flex: 1 1 17rem;
@@ -405,6 +405,7 @@ header.shadow#search-icon{
     color: #818181;
     text-align: center;
     cursor: pointer;
+        
 }
 .adres a{
     background-color: #020102;
@@ -461,7 +462,6 @@ header.shadow#search-icon{
     text-align: center;
     justify-content: center;
     color: #17c407;
-    margin-top: 35px;
 }
 .bkralt{
     color: #020102;
@@ -521,9 +521,28 @@ li ul li {
 .altbaslik{
     text-align: center;
     color: #020102;
-    font-size:11px;
+    font-size:18px;
     display: grid;
+    text-decoration: none;
+
 }
+.altyazı{
+    margin-top: 8px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+.numara{
+    color: black;
+    float: right;
+}
+.baslk{
+    text-align: center;
+    margin-top: 25px;
+    color: #17c407;
+    -webkit-text-stroke: 0.2px black;
+  }
 .ppp{
     justify-content: center;
 }
@@ -652,6 +671,7 @@ li ul li {
     background-color: #04AA6D;
     color: white;
   }
+  
 
   /*------------------------------------------------------------------------------------------------------------------*/
 
@@ -775,6 +795,11 @@ li ul li {
         width: 100%;
     }
     
+    .maps{
+        
+        
+        display: flex;
+    }
 
     
 }   

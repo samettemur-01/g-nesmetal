@@ -17,12 +17,7 @@ function closeNav() {
 
 
 
-var menuToggle = document.querySelector("#menu-icon");
-var menu = document.querySelector(".navbar");
 
-menuToggle.addEventListener("click", function() {
-  menu.classList.toggle("open");
-});
 
 
 
@@ -37,20 +32,7 @@ window.addEventListener('scroll' , () =>{
 
 
     
-const expandElement = document.querySelector('.expand-element');
-expandElement.addEventListener('click', () => {
-  expandElement.classList.toggle('expanded');
-});
 
-const expandElementt = document.querySelector('.expand-elementt');
-expandElementt.addEventListener('click', () => {
-  expandElementt.classList.toggle('expanded');
-});
-
-const expandElementtt = document.querySelector('.expand-elementtt');
-expandElementtt.addEventListener('click', () => {
-  expandElementtt .classList.toggle('expanded');
-});
 
 
 

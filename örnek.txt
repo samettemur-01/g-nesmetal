@@ -47,3 +47,46 @@ table, td, th {
   th, td {
     padding: 15px;
   }
+
+
+
+
+
+
+
+  <!--soru cevap bölümü-->
+    <section class="sorucevap">
+    
+        <div class="başlık">
+        <h2>Sıkça Sorulan Sorular</h2>
+    </div>
+    <div class="altbaslik">
+        <p>Merak ettiğiniz tüm soruların 
+            cevaplarını buradan bulabilirsiniz</p>
+    </div>
+    
+    
+    <div class="expand-element">
+        <p>+ Hurda Fiyat Değişikliğinin Sebepleri Nelerdir ?</p>
+        <div class="expand-content">
+          <p>Metal Hurda Fiyatları LME (Londra Metal Borsası) 
+            baz alınarak güncel 
+            bir şekilde müşterilere yansıtılmaktadır.</p>
+        </div>
+        </div>
+
+      <div class="expand-elementt">
+        <p>+ Hurda Tartımları Nasıl Yapılmaktadır?</p>
+        <div class="expand-contentt">
+          <p>Tüm hurdaların tartımları dijital elektronik 
+            kantarlar ile yapılmaktadır.</p>
+        </div>
+      </div>
+
+      <div class="expand-elementtt">
+        <p>+ Satılan Hurdaların Ödemeleri Nasıl Yapılıyor?</p>
+        <div class="expand-contenttt">
+          <p>Tüm hurda alımlarımızda ödemelerimiz hurda tartımından 
+            hemen sonra nakit olarak yapılmaktadır.</p>
+        </div>
+      </div>
