@@ -84,6 +84,10 @@ header.shadow#search-icon{
     color: var(--main-color);
 }
 
+#mySidenav > a{
+    white-space: nowrap;
+}
+
 .navbar{
     display: none;
   list-style: none;
